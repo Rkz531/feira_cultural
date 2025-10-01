@@ -1,0 +1,146 @@
+body{
+    background-color: #77a88a;;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 16px;
+ }
+ a{
+    color: black;
+    text-decoration: none;
+ }
+   a :hover {
+   color: rgb(73, 14, 14);
+}
+ h1{
+   color: black;
+   text-align: center;
+   
+}
+
+.link-esquerda {
+   position: fixed;     /* Fixar na tela */
+   top: 20px;           /* Distância do topo */
+   left: 20px;          /* Distância da esquerda */
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   font-size: 18px;
+}
+ 
+.link-direita {
+   position: fixed;     /* Fixar na tela */
+   top: 20px;           /* Distância do topo */
+   right: 20px;         /* Distância da direita */
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   font-size: 18px;
+}
+ 
+.link-esquerda:hover,
+.link-direita:hover{
+   color: #0066cc;      /* Cor ao passar o mouse */
+}
+
+header {
+   background-color: #103c11; /* Azul escuro, cor neutra e sóbria */
+   color: white;
+   padding: 25px 0;
+   text-align: center;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+   font-size: 3.2em;
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: white;
+}
+
+header h2 {
+   font-size: 1.6em;
+   margin-top: 0;
+   font-weight: 400;
+   opacity: 0.9;
+}
+
+.info-header {
+   margin-top: 20px;
+   font-size: 0.9em;
+   opacity: 0.8;
+}
+
+.info-header p {
+   margin: 5px 0;
+}
+
+footer {
+   background-color: #103c11;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+   margin-top: 50px;
+   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+   width: 1250px; /* Largura do carrossel */
+   height: 500px; /* Altura do carrossel */
+   overflow: hidden; /* Esconde o que sair do container */
+   position: relative;
+   margin: 50px auto; /* Centraliza o carrossel */
+   border: 1px solid #ccc;
+}
+
+.carousel-slide {
+   width: 100%;
+   height: 100%;
+   float: left; 
+   position: absolute;
+   top: 0;
+   left: 100%;
+   transition: left 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+}
+
+
+.carousel-slide.active {
+   left: 0;
+}
+.caixa {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #768d64;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.conteudo {
+    display: flex;
+    justify-content: space-between; /* separa as divs */
+    flex-direction: row-reverse;    /* inverte a ordem (caixa vai p/ direita) */
+    margin-bottom: 40px;
+    gap: 20px; /* espaço entre elas */
+}
+.bola {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #768d64;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
